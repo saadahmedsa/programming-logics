@@ -1,130 +1,181 @@
 
-//simple print
-console.log("Hello World");
+// //simple print
+// console.log("Hello World");
 
-// small number
-let a = 10, b = 20;
-console.log(a < b ? a : b);
-
-
-//even or odd
-let num = 8;
-console.log(num % 2 === 0 ? "Even" : "Odd");
+// // small number
+// let a = 10, b = 20;
+// console.log(a < b ? a : b);
 
 
-//find max and min in array
-
-// let arr = [1, 2, 31, 4, 5];
-// console.log(Math.max(...arr));
-// console.log(Math.min(...arr));
-
-//replace value
-let x = 5, y = 10;
-[x, y] = [y, x];
-console.log(x, y);
+// //even or odd
+// let num = 8;
+// console.log(num % 2 === 0 ? "Even" : "Odd");
 
 
-//join array
+// //find max and min in array
 
-let arr1 = [1, 2, 3];
-let arr2 = [4, 5, 6];
-let arr3 = [...arr1, ...arr2];
-console.log(arr3);
+// // let arr = [1, 2, 31, 4, 5];
+// // console.log(Math.max(...arr));
+// // console.log(Math.min(...arr));
 
-// reapt string
-let str = "hello";
-console.log(str.repeat(3));
+// //replace value
+// let x = 5, y = 10;
+// [x, y] = [y, x];
+// console.log(x, y);
 
-//table of 5
 
-// let n = 5;
-// for(let i=1; i<=10; i++){
-//     console.log(`${n} x ${i} = ${n*i}`);
+// //join array
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [4, 5, 6];
+// let arr3 = [...arr1, ...arr2];
+// console.log(arr3);
+
+// // reapt string
+// let str = "hello";
+// console.log(str.repeat(3));
+
+// //table of 5
+
+// // let n = 5;
+// // for(let i=1; i<=10; i++){
+// //     console.log(`${n} x ${i} = ${n*i}`);
+// // }
+
+// // 
+// let n = 10, sum = 0;
+// for(let i=1; i<=n; i++){
+
+//     sum += i;
+//     console.log(i, sum);
 // }
 
-// 
-let n = 10, sum = 0;
-for(let i=1; i<=n; i++){
+// //reverse string
 
-    sum += i;
-    console.log(i, sum);
-}
+// let hi = "hello";
+// console.log(hi.split("").reverse().join(""));
 
-//reverse string
+// //join string
 
-let hi = "hello";
-console.log(hi.split("").reverse().join(""));
+// let str1 = "hello";
+// let str2 = "world";
+// console.log(str1.concat(" ", str2));
 
-//join string
+// //find vovewel
+// let st = "javascript";
+// let count = st.match(/[aeiou]/gi).length;
+// console.log(count);
 
-let str1 = "hello";
-let str2 = "world";
-console.log(str1.concat(" ", str2));
+// //find duplicate
 
-//find vovewel
-let st = "javascript";
-let count = st.match(/[aeiou]/gi).length;
-console.log(count);
+// // let arr = [1,2,3,2,4,1,5];
+// // let duplicates = arr.filter((item, index) => arr.indexOf(item) );
+// // console.log([...new Set(duplicates)]);
 
-//find duplicate
+// //remove duplicate
 
-// let arr = [1,2,3,2,4,1,5];
-// let duplicates = arr.filter((item, index) => arr.indexOf(item) );
-// console.log([...new Set(duplicates)]);
+// let ar = [1,2,2,3,4,4,5];
+// let unique = [...new Set(ar)];
+// console.log(unique);
 
-//remove duplicate
+// //sort descending
 
-let ar = [1,2,2,3,4,4,5];
-let unique = [...new Set(ar)];
-console.log(unique);
+// // let arr = [40, 10, 30, 20];
+// // arr.sort((a, b) => b - a);
+// // console.log(arr);
 
-//sort descending
+// //sort ascending
 
-// let arr = [40, 10, 30, 20];
-// arr.sort((a, b) => b - a);
-// console.log(arr);
+// // let arr = [10,20,30,40];
+// // let summ = arr.reduce((a,b)=>a+b);
+// // console.log(summ);
 
-//sort ascending
+// //find average
 
-// let arr = [10,20,30,40];
-// let summ = arr.reduce((a,b)=>a+b);
-// console.log(summ);
-
-//find average
-
-let arr = [10, 20, 30, 40];
-let avg = arr.reduce((a,b)=>a+b,0) / arr.length;
-console.log(avg);
+// let arr = [10, 20, 30, 40];
+// let avg = arr.reduce((a,b)=>a+b,0) / arr.length;
+// console.log(avg);
 
 
-let araay = [1, -2, 0, 4, -5];
-let pos = araay.filter(x=>x>0);
-let neg = araay.filter(x=>x<0).length;
-let zero = araay.filter(x=>x===0).length;
-console.log({pos, neg, zero});
+// let araay = [1, -2, 0, 4, -5];
+// let pos = araay.filter(x=>x>0);
+// let neg = araay.filter(x=>x<0).length;
+// let zero = araay.filter(x=>x===0).length;
+// console.log({pos, neg, zero});
 
-let bin = "11001";
-console.log(parseInt(bin,2));
+// let bin = "11001";
+// console.log(parseInt(bin,2));
 
 
-let numq = 25;
-console.log(numq.toString(2));
+// let numq = 25;
+// console.log(numq.toString(2));
 
-let h = "hello world from js";
+// let h = "hello world from js";
 // let res = str.split(" ")
 //              .map(word => word[0].toUpperCase()+word.slice(1))
 //              .join(" ");
 
-let res = h[0].toUpperCase() + h.slice(1);
-console.log(res);
+// // let res = h[0].toUpperCase() + h.slice(1);
+// console.log(res);
 
 
 
-// let s = "I love JavaScript programming programming";
-// let words = s.split(" ");
-// let longest = words.reduce((a,b)=> a.length  > b.length ?a:b );
-// console.log(longest);
+// // let s = "I love JavaScript programming programming";
+// // let words = s.split(" ");
+// // let longest = words.reduce((a,b)=> a.length  > b.length ?a:b );
+// // console.log(longest);
 
 
-let sr = "JavaScript is powerful";
-console.log(sr.split(" ").length);
+// let sr = "JavaScript is powerful";
+// console.log(sr.split(" ").length);
+
+
+var num = 10
+
+for(let i=1; i<=num; i++){
+    console.log(`${num} x ${i} = ${num*i}`);
+}
+
+
+var arr = [1,2,3,4,5,6,7,8,90,10];
+
+console.log(Math.max(...arr));
+console.log(Math.min(...arr));
+
+var largest = arr[0];
+var smallest = arr[0];
+
+for(let i=1; i<arr.length; i++){
+    if(largest > arr[i]){
+        largest = arr[i];
+    }
+    if(smallest < arr[i]){
+        smallest = arr[i];
+    }
+}
+console.log(largest);
+console.log(smallest);
+
+
+var hi = 123
+
+console.log(hi.toString().split("").reverse().join(""));
+
+
+// let arr = [1, 2, 2, 3, 4, 2, 5];
+let target = 2;
+let count = arr.filter(x => x === target).length;
+console.log(`Element ${target} occurs ${count} times`); // 3
+
+var str1 = "silent";
+  let s1 = str1.toLowerCase().split("").sort().join("");
+  let str2 = "lissten";
+  let s2 = str2.toLowerCase().split("").sort().join("");
+  console.log(s1 == s2);
+
+
+  let sentence = "I am learning JavaScript program";
+let words = sentence.split(" ");
+let longest = words.reduce((a, b) => a.length > b.length ? a : b);
+
+console.log(longest); 
